@@ -1,0 +1,49 @@
+//JSON iterate for all loops
+
+var a =[{
+   
+    "name" : "krishna",
+    "mailid" : "Km586037@gmail.com"  , 
+    "no" : 7010690708
+
+},
+{
+    "name" : "moorthy",
+    "mailid" : "Krishna072402@gmail.com"  , 
+    "no" : 7305148209
+
+
+}] 
+
+//for loop
+
+for(var i = 0;i < a.length;i++){
+
+    var b = a[i];
+    console.log(b.name);
+    console.log(b.mailid);
+    console.log(b.no);
+}
+
+//for each
+
+a.forEach(function(b) { console.log(b.name); });
+
+//for In
+for (var key in json) {
+    if (a.hasOwnProperty(key)) {
+      console.log(a[key].mailid);
+      
+     
+    }
+    }
+
+//for Of
+let c = "";
+for (let hel of a[key].name) {
+ c = c + hel; 
+}
+ console.log(c);
+
+
+
